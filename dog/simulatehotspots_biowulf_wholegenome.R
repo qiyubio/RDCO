@@ -1,3 +1,7 @@
+
+## Author: Qi Yu
+## Contact: dryuqi@gmail.com
+
 simulatehotspots_biowulf <- function (
   nI             = 5000, #number of cells
   #plotAnimations = FALSE,
