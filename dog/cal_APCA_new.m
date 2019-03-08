@@ -1,3 +1,6 @@
+  
+% Author: Qi Yu
+% Contact: dryuqi@gmail.com
 function cal_APCA_new(filename)
     
     M1n = dlmread(filename);
