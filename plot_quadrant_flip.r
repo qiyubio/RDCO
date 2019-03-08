@@ -27,15 +27,6 @@ defplot2flip<-function(file,chr=NA,name=NA){
 }
 
 
-defplot2flip("181016_9014_3_CTTGTA_GC_050218_Hi_C_B6XCAST_Preleptotene.mm10_genome_mask_CAST.bwt2pairs_VI_chr1_chr3_5000000.matrix",name="preleptotene_highres",chr="chr1_chr3")
-
-defplot2flip("180530_prelep_B6XCAST_genome_mask_CAST.bwt2pairs_interaction_MD_CT_VI.txt_chr1_chr3_5000000.matrix",name="preleptotene",chr="chr1_chr3")
-defplot2flip("180530_lep_B6XCAST_genome_mask_CAST.bwt2pairs_interaction_MD_CT_VI.txt_chr1_chr3_5000000.matrix",name="leptotene",chr="chr1_chr3")
-defplot2flip("180901_9011_1_ACTGAT_GC_072318_Hi-C_B6XCAST_Zygotene.mm10_genome_mask_CAST.bwt2pairs_interaction_MD_CT_VI.txt_chr1_chr3_5000000.matrix",name="zygotene",chr="chr1_chr3")
-defplot2flip("181016_9014_4_ACTTGA_GC_072318_Hi-C_B6XCAST_Pachytene.mm10_genome_mask_CAST.bwt2pairs_interaction_MD_CT_VI.txt_chr1_chr3_5000000.matrix",name="pachytene_highres",chr="chr1_chr3")
-defplot2flip("180903_9013_1_GAGTGG_GC_072318_Hi-C_B6XCAST_Diplotene.mm10_genome_mask_CAST.bwt2pairs_interaction_MD_CT_VI.txt_chr1_chr3_5000000.matrix",name="diplotene",chr="chr1_chr3")
-defplot2flip("180901_9011_1_TTAGGC_GC_072318_Hi-C_B6XCAST_2N.mm10_genome_mask_CAST.bwt2pairs_interaction_MD_CT_VI.txt_chr1_chr3_5000000.matrix",name="2N",chr="chr1_chr3")
-defplot2flip("SRR2240730_bowtie2_mask_CAST_129s.bwt2pairs_interaction_MD_CT_VI.txt_chr1_chr3_5000000.matrix",name="ES",chr="chr1_chr3")
 defplot2flip("CRD018512_bowtie2_mask_DBA2J.bwt2pairs_interaction_MD_CT_VI.txt_chr1_chr3_5000000.matrix",name="E7.5",chr="chr1_chr3")
 
 
