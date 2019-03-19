@@ -50,7 +50,7 @@ GENOME=""
 
 
 
-while getopts ":i:j:o:g;ph" OPT
+while getopts ":i:j:o:g:h" OPT
 do
     case $OPT in
 	i) INPUT1=$OPTARG;;
@@ -121,10 +121,10 @@ fi
 #convert genome to config file
 ###################################
 
-if [[ $GENOME -eq 'mm10_B6' ]] ; then
+if [[ $GENOME == 'mm10_B6' ]] ; then
     CONFIGfile='/data/chengg2/config_mouse_biowulf_B6.txt'
 
-elif [[ $GENOME -eq 'mm10_CASTXB6' ]] ; then
+elif [[ $GENOME == 'mm10_CASTXB6' ]] ; then
     CONFIGfile='/data/chengg2/config_mouse_biowulf.txt'
 else 
     echo "unrecognized genome"
@@ -150,7 +150,7 @@ mkdir $OUTPUT/$OUTPUT;
 echo -n "Split the R1 file, this might take a while"
 
 /usr/local/Anaconda/envs_app/hicpro/2.11.1/HiC-Pro_2.11.1/bin/utils/split_reads.py -r $OUTPUT/$OUTPUT -n 5000000 $INPUT1
-echo "\nThe R1 file has been splited\n"
+echo -e "\nThe R1 file has been splited\n"
 
 
 echo -n "Split the R2 file, this might take a while"
@@ -158,7 +158,7 @@ echo -n "Split the R2 file, this might take a while"
 
 /usr/local/Anaconda/envs_app/hicpro/2.11.1/HiC-Pro_2.11.1/bin/utils/split_reads.py -r $OUTPUT/$OUTPUT -n 5000000 $INPUT2 
 
-echo "\nThe R2 file has been splited\n"
+echo -e "\nThe R2 file has been splited\n"
 
 fi
 #This program has been only tested for hicpro2.11.1 edited by Qi and run at biowulf, please edited accordingly
