@@ -45,7 +45,7 @@ defplot2nolog<-function(file,chr=NA,name=NA){
   #return(normalized_count)
   png(paste(chr,"_",name,".four.png",sep=""),width=1000, height=1000, res=200)
   
-  myplot1<-levelplot(z ~ x*, data=matrix1, xlab="X" , col.regions = heat.colors(100)[length(heat.colors(100)):1], main=paste(name,chr))
+  myplot1<-levelplot(z ~ x*y, data=matrix1, xlab="X" , col.regions = heat.colors(100)[length(heat.colors(100)):1], main=paste(name,chr))
   print(myplot1)
   
   dev.off()
